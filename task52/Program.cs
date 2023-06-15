@@ -39,5 +39,5 @@ void FindAveregeOfColumn(int[,] array)
         Console.Write($"{Math.Round(item, 1)}; ");
     }
 }
-int[,] newArray = CreateArray(3, 4);
+int[,] newArray = CreateArray(3, 5);
 FindAveregeOfColumn(newArray);
