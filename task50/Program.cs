@@ -18,9 +18,9 @@ void CreateArray(int row, int col)
         }
         Console.WriteLine();
     }
-    if (arr.GetLength(0) < row || arr.GetLength(1) < col)
+    if (arr.GetLength(0) < row || arr.GetLength(1) < col)   //Создаем условие при котором будут проверяться позиции элемента, не выходящие за рамки массива
     {
-        Console.WriteLine($"[{row},{col}] -> такого числа в массиве нет " +
+        Console.WriteLine($"[{row},{col}] -> такого числа в массиве нет " +     //Делаем конкатенацию для переноса строки
         $"[{row},{col}] - это позиция элемента, где {row} - строка, {col} - столбец");
     }
     else

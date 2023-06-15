@@ -10,7 +10,7 @@ int[,] CreateArray(int row, int col)
     int[,] arr = new int[row, col];
     for (int i = 0; i < arr.GetLength(0); i++)
     {
-        for (int j = 0; j < arr.GetLength(1); j++)
+        for (int j = 0; j < arr.GetLength(1); j++)              //Сначала создаем массив
         {
             arr[i, j] = new Random().Next(1, 10);
             Console.Write($"{arr[i, j]} ");

@@ -4,16 +4,16 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-void NewArray(int m, int n)
+void NewArray(int m, int n)     //Метод создания массива
 {
-    double[,] array = new double[m, n];
+    double[,] array = new double[m, n];     //Задаем имя двумерного массива и его размер на основе данных m и n
     Random rnd = new Random();
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)    //цикл обхода столбцов
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)    //Внутренний цикл обхода строки
         {
-            array[i, j] = Math.Round(-9.132 + rnd.NextDouble() * 19.135, 1);
-            Console.Write($"{array[i, j]} ");
+            array[i, j] = Math.Round(-9.132 + rnd.NextDouble() * 19.135, 1);    //Задаем случайное вечщественное число в определенном диапазоне
+            Console.Write($"{array[i, j]} ");   //Выводим значение элемента
         }
         Console.WriteLine();
     }
