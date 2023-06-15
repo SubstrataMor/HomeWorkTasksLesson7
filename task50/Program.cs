@@ -1,19 +1,19 @@
-﻿// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
+﻿// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, //
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
 // Например, задан массив:
 // 1 4 7 2
 // 5 9 2 3
 // 8 4 2 4
-// [1,7] -> такого числа в массиве нет [1,7]-это позиция элемента 1 - строка, 7 - столбец
+// [1,7] -> такого числа в массиве нет [1,7]-это позиция элемента 1 - строка, 7 - столбец //
 
-void CreateArray(int row, int col)
+void CreateArray(int row, int col)  //
 {
     int[,] arr = new int[3, 4];
-    for (int i = 0; i < arr.GetLength(0); i++)
+    for (int i = 0; i < arr.GetLength(0); i++)  //
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            arr[i, j] = new Random().Next(1, 10);
+            arr[i, j] = new Random().Next(1, 10);   //
             Console.Write($"{arr[i, j]} ");
         }
         Console.WriteLine();
@@ -25,7 +25,7 @@ void CreateArray(int row, int col)
     }
     else
     {
-        Console.WriteLine($"[{arr[row-1, col-1]}] -> искомое число");
+        Console.WriteLine($"[{arr[row-1, col-1]}] -> искомое число");   //Выводим
     }
 }
 CreateArray(1, 7);
